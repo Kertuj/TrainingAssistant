@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Training Assistant</string>
+    <color name="colorPrimary">#9CC4B0</color>
+    <color name="colorPrimaryDark">#6D9381</color>
+    <color name="colorAccent">#9CC4B0</color>
+
+    <color name="green">#9CC4B0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="semiWhite">#F5F5F5</color>
+    <color name="lightGray">#E0E0E0</color>
+    <color name="gray">#A3A3A3</color>
+    <color name="darkGray">#686868</color>
+    <color name="semiBlack">#1c1c1c</color>
+    <color name="red">#FF1D00</color>
+    <color name="lightRed">#FFA893</color>
+    <string name="app_name">TrainingAssistant</string>
 </resources>
