@@ -12,4 +12,18 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+
+    <string name="bmi_inf">BMI (Body Mass Index) jest bardzo ogólnym wskaźnikiem,
+        nie zaleca się stosowania jeżeli jesteś osobą regularnie wykonującą dowolną
+        aktywność sportową!</string>
+    <string name="give_weight">podaj swoją wagę (kg)</string>
+    <string name="give_height">podaj swój wzrost (m)</string>
+    <string name="bmi_level_m1">Niedowaga, zwiększony poziom wystąpienia innych problemów
+        zdrowotnych niż u osób z otyłością.</string>
+    <string name="bmi_level_0">Optymalna waga ciała.</string>
+    <string name="bmi_level_p1">Nadwaga, średnie ryzyko wystąpienia chorób towarzyszących otyłości.</string>
+    <string name="bmi_level_p2">Otyłość, wysokie ryzyko wystąpienia chorób towarzyszących otyłości.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
