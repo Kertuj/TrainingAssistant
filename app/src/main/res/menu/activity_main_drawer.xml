@@ -5,16 +5,36 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_TrainingPlans"
+            android:icon="@drawable/ic_menu_trainingplans"
+            android:title="Your Training Plans" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_BMI"
+            android:icon="@drawable/ic_menu_bmi"
+            android:title="BMI Counter" />
+        <item
+            android:id="@+id/nav_MealPlan"
+            android:icon="@drawable/ic_menu_mealplan"
+            android:title="Meal Plan" />
+        <item
+            android:id="@+id/nav_Calendar"
+            android:icon="@drawable/ic_menu_calendar"
+            android:title="Calendar" />
+        <item android:title="Informations">
+            <menu>
+                <item
+                    android:id="@+id/nav_AboutApp"
+                    android:icon="@drawable/ic_menu_aboutapp"
+                    android:title="About App"/>
+                <item
+                    android:id="@+id/nav_AboutUs"
+                    android:icon="@drawable/ic_menu_aboutus"
+                    android:title="About Us"/>
+            </menu>
+        </item>
     </group>
 </menu>
