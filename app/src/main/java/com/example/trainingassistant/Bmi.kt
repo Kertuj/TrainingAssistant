@@ -42,10 +42,10 @@ class BmiFragment : Fragment() {
 
         binding.bSubmit.setOnClickListener(){
 
-            var masa = binding.etMasa.text.toString().toDouble()
-            var wzrost = binding.etWzrost.text.toString().toDouble()
+            val masa = binding.etMasa.text.toString().toDouble()
+            val wzrost = binding.etWzrost.text.toString().toDouble()
 
-            var wynik = masa/(wzrost*wzrost)
+            val wynik = masa/(wzrost*wzrost)
             //wynik = String.format("%.3f", wynik)
 
             binding.tvWynik.text = String.format("%.2f", wynik)
