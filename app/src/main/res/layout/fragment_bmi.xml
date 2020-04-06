@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -11,50 +12,73 @@
         android:layout_height="match_parent"
         tools:context=".BmiFragment">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/bmi_inf" />
+            <LinearLayout
+                android:layout_width="253dp"
+                android:layout_height="439dp"
+                android:layout_marginTop="128dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <EditText
-                android:id="@+id/et_Masa"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/give_weight"
-                android:inputType="numberDecimal" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmi_inf" />
 
-            <EditText
-                android:id="@+id/et_Wzrost"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/give_height"
-                android:inputType="numberDecimal" />
+                <EditText
+                    android:id="@+id/et_Masa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/give_weight"
+                    android:inputType="numberDecimal" />
 
-            <Button
-                android:id="@+id/b_Submit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="oblicz" />
+                <EditText
+                    android:id="@+id/et_Wzrost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/give_height"
+                    android:inputType="numberDecimal" />
 
-            <TextView
-                android:id="@+id/tv_Wynik"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="30sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tv_Opis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="24sp" />
-        </LinearLayout>
+                    <Button
+                        android:id="@+id/b_Submit"
+                        android:layout_width="171dp"
+                        android:layout_height="wrap_content"
+                        android:text="oblicz" />
+
+                    <Button
+                        android:id="@+id/bClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clear_button" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_Wynik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_Opis"
+                    android:layout_width="match_parent"
+                    android:layout_height="172dp"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </FrameLayout>
 </layout>

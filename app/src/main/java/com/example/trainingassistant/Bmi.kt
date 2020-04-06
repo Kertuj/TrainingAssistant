@@ -7,7 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import com.example.trainingassistant.databinding.FragmentBmiBinding
+import java.lang.Double.NaN
+import java.lang.Double.POSITIVE_INFINITY
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,42 +42,73 @@ class BmiFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding = FragmentBmiBinding.inflate(inflater, container, false)
+        val hintColor = binding.etMasa.currentHintTextColor
 
         binding.bSubmit.setOnClickListener(){
 
-            val masa = binding.etMasa.text.toString().toDouble()
-            val wzrost = binding.etWzrost.text.toString().toDouble()
+            binding.etMasa.setHintTextColor(hintColor)
+            binding.etWzrost.setHintTextColor(hintColor)
 
-            val wynik = masa/(wzrost*wzrost)
-            //wynik = String.format("%.3f", wynik)
+            if (binding.etMasa.text.isNotEmpty() and binding.etWzrost.text.isNotEmpty()) {
 
-            binding.tvWynik.text = String.format("%.2f", wynik)
-            //binding.tvWynik.text = String.format("%.3f", wynik)
+                val masa = binding.etMasa.text.toString().toDouble()
+                val wzrost = (binding.etWzrost.text.toString().toDouble())/100
 
-            if(wynik <= 24.99 && wynik >= 18.5){
+                val wynik = masa/(wzrost*wzrost)
+                //wynik = String.format("%.3f", wynik)
 
-                binding.tvWynik.setTextColor(Color.parseColor("#00FF00"))
-                binding.tvOpis.text = getString(R.string.bmi_level_0)
+                if(wynik.isNaN() || wynik == 0.0 || wynik.isInfinite()){
+                    Toast.makeText(activity, "Podano nieprawidłowe wartości!", Toast.LENGTH_SHORT).show()
+                } else {
 
-            }else if(wynik < 18.5){
+                    binding.tvWynik.text = String.format("%.2f", wynik)
+                    //binding.tvWynik.text = String.format("%.3f", wynik)
 
-                binding.tvWynik.setTextColor(Color.parseColor("#0000FF"))
-                binding.tvOpis.text = getString(R.string.bmi_level_m1)
+                    if (wynik <= 24.99 && wynik >= 18.5) {
+
+                        binding.tvWynik.setTextColor(Color.parseColor("#00FF00"))
+                        binding.tvOpis.text = getString(R.string.bmi_level_0)
+
+                    } else if (wynik < 18.5) {
+
+                        binding.tvWynik.setTextColor(Color.parseColor("#0000FF"))
+                        binding.tvOpis.text = getString(R.string.bmi_level_m1)
 
 
-            }else if(wynik > 24.99 && wynik <= 29.99){
+                    } else if (wynik > 24.99 && wynik <= 29.99) {
 
-                binding.tvWynik.setTextColor(Color.parseColor("#FFFF00"))
-                binding.tvOpis.text = getString(R.string.bmi_level_p1)
+                        binding.tvWynik.setTextColor(Color.parseColor("#FFFF00"))
+                        binding.tvOpis.text = getString(R.string.bmi_level_p1)
 
 
-            }else if(wynik > 29.99){
+                    } else if (wynik > 29.99) {
 
-                binding.tvWynik.setTextColor(Color.parseColor("#FF0000"))
-                binding.tvOpis.text = getString(R.string.bmi_level_p2)
+                        binding.tvWynik.setTextColor(Color.parseColor("#FF0000"))
+                        binding.tvOpis.text = getString(R.string.bmi_level_p2)
 
+                    }
+
+                }
+            } else {
+
+
+                Toast.makeText(activity, "Uzupełnij wszystkie pola!", Toast.LENGTH_SHORT).show()
+
+                if(binding.etMasa.text.isEmpty()) binding.etMasa.setHintTextColor(Color.parseColor("#FF0000"))
+                if(binding.etWzrost.text.isEmpty()) binding.etWzrost.setHintTextColor(Color.parseColor("#FF0000"))
             }
 
+        }
+
+        binding.bClear.setOnClickListener(){
+
+            binding.etMasa.setHintTextColor(hintColor)
+            binding.etWzrost.setHintTextColor(hintColor)
+
+            binding.etWzrost.text.clear()
+            binding.etMasa.text.clear()
+            binding.tvWynik.text = ""
+            binding.tvOpis.text = ""
         }
 
         return binding.root
