@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "750228933920",
+    "firebase_url": "https://trainingassistant-11ebf.firebaseio.com",
+    "project_id": "trainingassistant-11ebf",
+    "storage_bucket": "trainingassistant-11ebf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750228933920:android:c3ee12461c98cba92f9b45",
+        "android_client_info": {
+          "package_name": "com.example.trainingassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750228933920-6o3g8v9it05qpav71p03a5i9k2asgfan.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trainingassistant",
+            "certificate_hash": "68fb3b397db6c254d47465e488e730c4a7d13327"
+          }
+        },
+        {
+          "client_id": "750228933920-g9r9uvi90q0fvngtkabtgvnoa7kuq4kf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_sZbE23uHLDK5l-wNmtmhbv40a5QU8HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750228933920-g9r9uvi90q0fvngtkabtgvnoa7kuq4kf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
