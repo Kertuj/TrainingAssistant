@@ -7,33 +7,33 @@
         <item
             android:id="@+id/nav_Home"
             android:icon="@drawable/ic_menu_home"
-            android:title="Home" />
+            android:title="Start" />
         <item
             android:id="@+id/nav_TrainingPlans"
             android:icon="@drawable/ic_menu_trainingplans"
-            android:title="Your Training Plans" />
+            android:title="Twój Plan Treningowy" />
         <item
             android:id="@+id/nav_BMI"
             android:icon="@drawable/ic_menu_bmi"
-            android:title="BMI Counter" />
+            android:title="Kalkulator BMI" />
         <item
             android:id="@+id/nav_MealPlan"
             android:icon="@drawable/ic_menu_mealplan"
-            android:title="Meal Plan" />
+            android:title="Plan posiłków" />
         <item
             android:id="@+id/nav_Calendar"
             android:icon="@drawable/ic_menu_calendar"
-            android:title="Calendar" />
-        <item android:title="Informations">
+            android:title="Kalendarz" />
+        <item android:title="Informacje">
             <menu>
                 <item
                     android:id="@+id/nav_AboutApp"
                     android:icon="@drawable/ic_menu_aboutapp"
-                    android:title="About App"/>
+                    android:title="O aplikacji"/>
                 <item
                     android:id="@+id/nav_AboutUs"
                     android:icon="@drawable/ic_menu_aboutus"
-                    android:title="About Us"/>
+                    android:title="O nas"/>
             </menu>
         </item>
     </group>
