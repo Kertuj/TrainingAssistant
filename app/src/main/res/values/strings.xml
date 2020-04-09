@@ -17,12 +17,13 @@
         nie zaleca się stosowania jeżeli jesteś osobą regularnie wykonującą dowolną
         aktywność sportową!</string>
     <string name="give_weight">podaj swoją wagę (kg)</string>
-    <string name="give_height">podaj swój wzrost (m)</string>
+    <string name="give_height">podaj swój wzrost (cm)</string>
     <string name="bmi_level_m1">Niedowaga, zwiększony poziom wystąpienia innych problemów
         zdrowotnych niż u osób z otyłością.</string>
     <string name="bmi_level_0">Optymalna waga ciała.</string>
     <string name="bmi_level_p1">Nadwaga, średnie ryzyko wystąpienia chorób towarzyszących otyłości.</string>
     <string name="bmi_level_p2">Otyłość, wysokie ryzyko wystąpienia chorób towarzyszących otyłości.</string>
+    <string name="clear_button">Czyść</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
