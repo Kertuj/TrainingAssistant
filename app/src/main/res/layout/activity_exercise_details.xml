@@ -20,6 +20,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="TextView"
+            android:textSize="18dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,9 +29,12 @@
             android:id="@+id/exercise1Strike"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/exercise1Label"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise1Label" />
 
         <TextView
@@ -40,6 +45,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="TextView"
+            android:textSize="18dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise1Strike" />
 
@@ -47,9 +54,12 @@
             android:id="@+id/exercise2Strike"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/exercise2Label"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise2Label" />
 
         <TextView
@@ -60,6 +70,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="TextView"
+            android:textSize="18dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise2Strike" />
 
@@ -67,9 +79,12 @@
             android:id="@+id/exercise3Strike"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/exercise3Label"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise3Label" />
 
         <TextView
@@ -80,6 +95,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:text="TextView"
+            android:textSize="18dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise3Strike" />
 
@@ -87,9 +104,12 @@
             android:id="@+id/exercise4Strike"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/exercise4Label"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise4Label" />
 
         <TextView
@@ -98,6 +118,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:text="TextView"
+            android:textSize="18dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/exercise4Strike" />
@@ -106,8 +128,14 @@
             android:id="@+id/description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
             android:text="TextView"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/descriptionLabel" />
     </androidx.constraintlayout.widget.ConstraintLayout>
