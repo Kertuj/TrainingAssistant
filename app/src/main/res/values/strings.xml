@@ -8,7 +8,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Start</string>
-    <string name="menu_training_plan">Twój Plan Treningowy</string>
+    <string name="menu_training_plan">Plany Treningowe</string>
     <string name="menu_BMI">Kalkulator BMI</string>
     <string name="menu_calendar">Kalendarz</string>
     <string name="menu_meal_plan">Plan posiłków</string>
