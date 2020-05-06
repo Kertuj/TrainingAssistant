@@ -38,7 +38,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/give_weight"
-                    android:inputType="numberDecimal" />
+                    android:inputType="numberDecimal"
+                    android:importantForAutofill="no" />
 
                 <EditText
                     android:id="@+id/et_Wzrost"
@@ -46,7 +47,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="@string/give_height"
-                    android:inputType="numberDecimal" />
+                    android:inputType="numberDecimal"
+                    android:importantForAutofill="no" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -57,13 +59,15 @@
                         android:id="@+id/b_Submit"
                         android:layout_width="171dp"
                         android:layout_height="wrap_content"
-                        android:text="oblicz" />
+                        android:text="@string/oblicz"
+                        tools:ignore="ButtonStyle" />
 
                     <Button
                         android:id="@+id/bClear"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/clear_button" />
+                        android:text="@string/clear_button"
+                        tools:ignore="ButtonStyle" />
                 </LinearLayout>
 
                 <TextView
